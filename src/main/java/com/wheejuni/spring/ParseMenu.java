@@ -39,7 +39,7 @@ public class ParseMenu {
 
 	public static Menu[] returnInmunMenu() throws Exception {
 		String date = Integer.toString(returnDate());
-		String[] code = { "010", "011", "012", "013", "014" };
+		String[] code = { "022", "023", "024", "025", "026" };
 		Menu[] menuarray = new Menu[5];
 		for (int i = 0; i < code.length; i++) {
 
@@ -61,7 +61,7 @@ public class ParseMenu {
 	public static Menu[] returnGyosuMenu() throws Exception {
 
 		String date = Integer.toString(returnDate());
-		String[] code = { "008", "009" };
+		String[] code = { "009", "010" };
 		Menu[] menuarray = new Menu[2];
 		for (int i = 0; i < code.length; i++) {
 

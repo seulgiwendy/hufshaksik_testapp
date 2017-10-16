@@ -34,7 +34,7 @@ public class MsgHandler {
 
 		if (message.matches("인문관식당")) {
 			Menu[] rawmenu = ParseMenu.returnInmunMenu();
-
+			
 			if (hour < 11) {
 				JSONObject morning = CreateJSON.returnJSON(rawmenu[0].toString());
 				return MsgHandler.sendMessage(morning);
